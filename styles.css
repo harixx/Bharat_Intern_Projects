@@ -1,0 +1,100 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Set background to a vibrant gradient */
+  background: linear-gradient(120deg, #f6d365, #fda085);
+  margin: 0; /* Remove default body margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form Container */
+.glass-container {
+  width: 80%;
+  max-width: 400px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease;
+}
+
+/* Form Title */
+h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  font-size: 2em; /* Increase font size */
+}
+
+/* Inputs and Labels */
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 1.2em; /* Increase label font size */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.1em; /* Increase input font size */
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  font-size: 1.1em; /* Increase button font size */
+}
+
+/* Hover effect on button */
+button:hover {
+  background-color: #45a049;
+}
+
+/* Error messages */
+.error-message {
+  color: #ff5555;
+  font-size: 0.9em;
+  margin-top: 5px;
+  display: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Animation for the form container */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
